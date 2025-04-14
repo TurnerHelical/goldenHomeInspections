@@ -84,3 +84,32 @@ main{
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2)
 }
 
+#services {
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2), 0px -2px 3px rgba(0, 0, 0, 0.2) ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    margin: 10px 0px;
+    border: 1px #D4FAFA solid;
+    gap: 5px;
+    border-radius: 10px;
+    background-color: #D4FAFA;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2)
+}
+
+.card img {
+    max-height: 100px;
+}
+
