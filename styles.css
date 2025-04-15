@@ -74,14 +74,14 @@ main{
     font-size: 24px;
 }
 
-#scheduleBtnCtr {
+#scheduleBtnCtrMobile {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px 0px;
 }
 
-#scheduleBtnCtr button {
+#scheduleBtnCtrMobile button {
     background-color: #D4FAFA;
     border: 1px #D4FAFA solid;
     padding: 20px;
@@ -99,6 +99,10 @@ main{
     flex-direction: column;
     align-items: center;
     padding: 10px 0px;
+}
+
+.cardDesktop {
+    display: none;
 }
 
 .card {
@@ -119,6 +123,23 @@ main{
 
 .card img {
     max-height: 100px;
+}
+
+#scheduleBtnCtrDesktop {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+#scheduleBtnCtrDesktop button {
+    background-color: #D4FAFA;
+    border: 1px #D4FAFA solid;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+
 }
 
 #contact {
@@ -183,5 +204,51 @@ footer {
 
     .desktopButton:hover {
         background-color: #D4FAFA;
+    }
+
+    #opener {
+        background-image: url(./images/ChatGPT\ Image\ Apr\ 15\,\ 2025\,\ 11_19_55\ AM.png) !important;
+        height: 400px;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #opener p {
+        background-color: rgba(0, 0, 0, 0.5) ;
+        color: white;
+        font-size: 32px;
+        padding: 10px 50px;
+    }
+
+    #serving ul {
+        gap: 20px;
+        font-size: 32px;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    }
+
+    #serving li {
+        font-size: 32px;
+    }
+
+    #scheduleBtnCtrMobile {
+        display: none;
+    } 
+
+    #scheduleBtnCtrDesktop {
+        display: flex;
+    }
+
+    #scheduleBtnCtrDesktop button:hover {
+        background-color: white;
+    }
+
+    .card {
+        display: none;
+    }
+
+    .cardDesktop {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr
     }
 }
