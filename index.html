@@ -126,11 +126,36 @@
                 <button>Schedule your inspection today</button>
             </div>
 
-            <div id="contact">
+            <div id="contactMobile">
                 <h3>Contact Us</h3>
                 <p>I can be reached at 941-726-4663, via call or text, or you can send an email to
                     GHInspectionsSWFL@gmail.com</p>
             </div>
+
+            <div id="contactDesktop">
+                <h3>Contact Us</h3>
+                <p>For more information or any questions you can contact us at: </p>
+                   <ul>
+                    <li>Call/Text: (941)725-4663</li>
+                    <li> Email: GHInspectionsSWFL@gmail.com</li>
+                   </ul> 
+                   <p>Or fill out this form and someone will contact you</p>
+                   <div id="desktopQuote">
+                    <form action="https://formspree.io/f/yourFormID" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                      
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="_replyto" required>
+                      
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                      
+                        <button type="submit">Send</button>
+                      </form>
+                </div>
+            </div>
+
         </main>
     </div>
     <footer>

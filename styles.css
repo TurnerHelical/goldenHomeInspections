@@ -142,13 +142,21 @@ main{
 
 }
 
-#contact {
+#contactMobile {
     background-color: white;
     margin-top: 30px;
     text-align: center;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2), 0px -2px 3px rgba(0, 0, 0, 0.2) ;
     padding: 20px 10px;
     font-size: 20px;
+}
+
+#contactDesktop {
+    display: none;
+}
+
+#desktopQuote {
+    display: none;
 }
 
 footer {
@@ -255,6 +263,7 @@ footer {
         font-size: 48px;
         background-color: #D4FAFA;
         padding: 30px;
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2) ;
     }
 
     .card {
@@ -267,6 +276,8 @@ footer {
         align-items: center;
         justify-content: space-evenly;
         background-color: #D4FAFA;
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2) ;
+        
     }
 
     .cardDesktop img {
@@ -282,11 +293,81 @@ footer {
         display: flex;
         flex-direction: column;
         align-self: flex-start;
+        gap: 40px;
     }
 
     .cardDesktop p {
         padding: 20px 5px 0px 5px;
         font-size: 24px;
         border-bottom: 2px black solid;
+    }
+
+    .cardDesktop ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+    .cardDesktop li {
+        font-size: 20px
+    }
+
+    #contactMobile {
+        display: none;
+    }
+
+    #contactDesktop {
+        display: block;
+        background-color: white;
+        margin: 30px 0px;
+        text-align: center;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2), 0px -2px 3px rgba(0, 0, 0, 0.2) ;
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+
+    #contactDesktop ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+    #desktopQuote {
+        display: flex;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+
+    }
+
+    #desktopQuote form {
+        display: grid;
+        grid-template: 50px 50px 130px 50px / 70px 300px;
+        align-items: center;
+        justify-content:flex-end;
+        gap: 30px;
+        text-align: center;
+        border: 1px black solid;
+        padding: 20px;
+        background-color: rgba(211, 169, 113, 0.5);
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2), 0px -2px 3px rgba(0, 0, 0, 0.2) ;
+    }
+
+    form button {
+        grid-area: 4 / 1 / 5 / 3;
+        justify-self: center;
+        padding: 5px 50px;
+        background-color: #D4FAFA;
+        border: 1px #D4FAFA solid;
+        border-radius: 10px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        font-size: 24px;
+    }
+
+    form button:hover {
+        background-color: white;
+    }
+
+    #message {
+        resize: none;
     }
 }
