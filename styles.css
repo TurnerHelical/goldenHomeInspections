@@ -24,6 +24,10 @@
     height: 250px;   
 }
 
+#desktopHeaderButtons {
+    display: none;
+}
+
 main{
     background-color: rgba(211, 169, 113, 0.5);
     padding: 30px 0px;
@@ -133,4 +137,51 @@ footer {
     justify-content: center;
 }
 
+@media (width >= 1000px) {
 
+    #numberBar {
+        height: 50px;
+    }
+
+    #numberBar p {
+        display: none;
+    }
+
+    #numberBar img{
+        display: none;
+    }
+
+    #headerMain {
+        justify-content: space-between;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .headerDesktop {
+        display: block;
+        font-size: 24px;
+    }
+
+    #desktopHeaderButtons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .desktopNumber {
+        background-color: rgba(211, 169, 113, 1);
+        padding: 20px 10px;
+        border-radius: 10px;
+    }
+
+    .desktopButton {
+        padding: 20px 10px;
+        background-color: rgba(211, 169, 113, 1);
+        border-radius: 10px;
+        border: 0px;
+    }
+
+    .desktopButton:hover {
+        background-color: #D4FAFA;
+    }
+}
