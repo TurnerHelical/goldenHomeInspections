@@ -48,7 +48,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 #serving ul {
@@ -67,7 +67,7 @@ main{
     border-radius: 10px;
     padding: 3px;
     background-color: #D4FAFA;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 #scheduleBtnCtr {
@@ -82,7 +82,9 @@ main{
     border: 1px #D4FAFA solid;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+
 }
 
 #services {
@@ -107,7 +109,8 @@ main{
     gap: 5px;
     border-radius: 10px;
     background-color: #D4FAFA;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
 }
 
 .card img {
@@ -120,6 +123,7 @@ main{
     text-align: center;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2), 0px -2px 3px rgba(0, 0, 0, 0.2) ;
     padding: 20px 10px;
+    font-size: 20px;
 }
 
 footer {
